@@ -3,8 +3,8 @@ services:
     name: multiplayer-grid-backend
     runtime: node
     rootDir: backend
-    buildCommand: npm install && npm run build
-    startCommand: npm run dev
+    buildCommand: npm install --production=false && npm run build
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
