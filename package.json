@@ -1,0 +1,26 @@
+{
+  "name": "multiplayer-grid",
+  "version": "1.0.0",
+  "description": "Multiplayer Grid Web Application",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "setup": "npm run install:all"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "keywords": [
+    "multiplayer",
+    "grid",
+    "realtime",
+    "socket.io",
+    "react"
+  ],
+  "author": "Applicant",
+  "license": "ISC"
+}
